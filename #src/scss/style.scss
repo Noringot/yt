@@ -1,0 +1,126 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+}
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+.container{
+	padding: 0px 70px 0px 32px;
+}
+.header {
+	padding: 30px 0px 50px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__burger-btn {
+		height: 17px;
+		width: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-right: 20px;
+		cursor: pointer;
+		& .header__burger-line{
+			display: block;
+			width: 20px;
+			height: 3px;
+			background: #000;
+			border-radius: 20px;
+		}
+	}
+
+	&__logo {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		& span{
+			margin-left: 5px;
+			font-family: Gilroy;
+			font-weight: 700;
+			font-size: 25px;
+			letter-spacing: -2px;
+		}
+	}
+
+	&__search {
+		display: flex;
+		align-self: center;
+		align-items: center;
+		justify-content: space-between;
+		background-color: #f3f3f3;
+		border: 1px solid #f3f3f3;
+		border-radius: 30px;
+		height: 0%;
+		padding: 8px 16px;
+		font-size: 16px;
+		color: #dddddd;
+		width: 40vw;
+		& input:active, :hover, :focus, input {
+			outline: 0;
+			outline-offset: 0;
+			border: none;
+			background-color: inherit;
+		}
+		
+
+	}
+
+	&__search-btn {
+		border: none;
+		background: none;
+		cursor: pointer;
+		&:active, :hover, :focus {
+			outline: 0;
+			outline-offset: 0;
+			
+		}
+	}
+
+	&__trash {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__create {
+	}
+
+	&__app {
+	}
+
+	&__notify {
+	}
+
+	&__create, &__app, &__notify{
+		margin-right: 2.3vw;
+		cursor: pointer;
+		& img:hover{
+			fill: #000;
+		}
+	}
+
+	&__avatar {
+		width: 40px;
+		height: 40px;
+		border-radius: 100%;
+		background-color: #dddddd;
+		
+	}
+}
+
