@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<title>YouTube</title>
 </head>
@@ -47,157 +48,479 @@
 							<use href="img/icon.svg#notify-header"></use>
 						</svg>
 					</a>
-					<a href="#" class="header__avatar avatar"></a>
+					<a href="#" class="header__avatar avatar"><img src="img/avatar-header.png" alt="" srcset=""></a>
 				</div>
 			</div>
 		</div>
 	</header>
+	<aside class="main__sidebar sidebar">
+		<ul class="sidebar__list">
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#home-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Home</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#fire-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Trending</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#subs-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Subscriptions</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="sidebar__list">
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#library-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Library</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#history-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">History</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#watch-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Watch later</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#star-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Favourites</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#heart-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Liked videos</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#note-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Music</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#gamepad-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Games</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<svg class="icon">
+						<use href="img/icon.svg#arr-sidebar"></use>
+					</svg>
+					<span class="sidebar__text">Show more</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="sidebar__list">
+			<li class="sidebar__item">
+				<span class="sidebar__title">Subscriptions</span>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-1.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Gussie Singleton</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-2.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Nora Francis</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-3.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Belle Briggs</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-4.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Eunice Cortez</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-5.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Emma Hanson</span>
+				</a>
+			</li>
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<div class="sidebar__avatar avatar"><img src="img/avatar-sidebar-6.png" alt="" srcset=""></div>
+					<span class="sidebar__text">Leah Berry</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="sidebar__list">
+			<li class="sidebar__item">
+				<a href="#" class="sidebar__link">
+					<img src="img/icon/settings.svg" alt="">
+					<span class="sidebar__text">Setting</span>
+				</a>
+			</li>
+		</ul>
+	</aside>
 	<main class="main">
-		<div class="container">
-			<div class="main__sidebar sidebar">
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#home-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Home</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#fire-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Trending</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#subs-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Subscriptions</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#library-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Library</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#history-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">History</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#watch-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Watch later</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#star-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Favourites</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#heart-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Liked videos</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#note-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Music</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#gamepad-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Games</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<svg class="icon">
-								<use href="img/icon.svg#arr-sidebar"></use>
-							</svg>
-							<span class="sidebar__text">Show more</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<span class="sidebar__title">Subscriptions</span>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum.</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum</span>
-						</a>
-					</li>
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<div class="sidebar__avatar avatar"></div>
-							<span class="sidebar__text">Lorem, ipsum</span>
-						</a>
-					</li>
-				</ul>
-				<ul class="sidebar__list">
-					<li class="sidebar__item">
-						<a href="#" class="sidebar__link">
-							<img src="img/icon/settings.svg" alt="">
-							<span class="sidebar__text">Setting</span>
-						</a>
-					</li>
-				</ul>
+		<div class="main__content content">
+			<div class="content__channel">
+				<div class="content__title">
+					<div class="content__avatar avatar"><img src="img/avatar-content-1.png" alt="" srcset=""></div>
+					<span class="content__name">Gussie Singleton</span>
+				</div>
+				<!--navigation buttons -->
+				<div class="content__btn content__btn-1-prev"><img src="img/l-arr.svg" alt="" srcset=""></div>
+				<div class=" content__btn content__btn-1-next"><img src="img/r-arr.svg" alt="" srcset=""></div>
+				<!-- Slider main container -->
+				<div class="swiper-container content__row-1">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper content__wrapper">
+					<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-1.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-2.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-3.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-4.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-4.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-5.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="content__channel content__channel-recommend">
+				<div class="content__title">
+					<span class="content__name">Recommended</span>
+				</div>
+				<!--navigation buttons -->
+				<div class="content__btn content__btn-rec-prev"><img src="img/l-arr.svg" alt="" srcset=""></div>
+				<div class=" content__btn content__btn-rec-next"><img src="img/r-arr.svg" alt="" srcset=""></div>
+				<!-- Slider main container -->
+				<div class="swiper-container content__row-recommend">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper content__wrapper">
+					<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-6.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-7.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-8.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-6.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="content__channel">
+				<div class="content__title">
+					<div class="content__avatar avatar"><img src="img/avatar-content-2.png" alt="" srcset=""></div>
+					<span class="content__name">Food & Drink</span>
+				</div>
+				<!--navigation buttons -->
+				<div class="content__btn content__btn-2-prev"><img src="img/l-arr.svg" alt="" srcset=""></div>
+				<div class=" content__btn content__btn-2-next"><img src="img/r-arr.svg" alt="" srcset=""></div>
+				<!-- Slider main container -->
+				<div class="swiper-container content__row-2">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper content__wrapper">
+					<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-9.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-10.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-11.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-12.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-13.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide content__video video">
+							<div class="content__video video">
+								<div class="video__preview">
+									<img src="img/preview-14.png" alt="" srcset="">
+									<div class="video__timecode"><span>4:15</span></div>
+								</div>
+								<div class="video__name">Lorem, ipsum.</div>
+								<div class="video__subtitle">
+									<div class="video__info">
+										<div class="video__views">80k views</div>
+										<div class="video__date">3 days ago</div>
+									</div>
+									<div class="video__author">Dollie Blair</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
 	</main>
 </body>
 </html>

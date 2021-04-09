@@ -39,6 +39,12 @@ a {
   color: inherit;
 }
 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dddddd;
+  opacity: 0.1;
+}
+
 .container {
   padding: 0px 70px 0px 32px;
 }
@@ -49,7 +55,14 @@ a {
 }
 
 .header {
-  padding: 20px 0px 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  z-index: 50;
+  background-color: #fff;
 }
 
 .header__wrapper {
@@ -186,8 +199,29 @@ a {
   height: 40px;
 }
 
-.main__sidebar {
-  display: inline-block;
+.sidebar {
+  display: block;
+  position: fixed;
+  overflow: auto;
+  height: calc(100% - 113px);
+  top: 113px;
+  padding: 0px 50px 0px 32px;
+  font-size: 16px;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
 }
 
 .sidebar svg {
@@ -197,7 +231,7 @@ a {
 }
 
 .sidebar__list {
-  margin: 0px 90px 60px 0px;
+  margin: 0px 0px 60px 0px;
 }
 
 .sidebar__list:nth-child(3) {
@@ -218,25 +252,6 @@ a {
   margin-bottom: 20px;
 }
 
-.sidebar__link svg {
-  -webkit-transition: .13s ease-in;
-  transition: .13s ease-in;
-}
-
-.sidebar__link span {
-  -webkit-transition: .13s ease-in;
-  transition: .13s ease-in;
-}
-
-.sidebar__link:hover svg {
-  fill: #FF0000;
-  opacity: 1;
-}
-
-.sidebar__link:hover span {
-  color: #FF0000;
-}
-
 .sidebar__text {
   font-family: Mulish;
   font-size: 16px;
@@ -254,4 +269,160 @@ a {
 .sidebar__avatar {
   width: 26px;
   height: 26px;
+}
+
+.main__content {
+  width: 100%;
+  padding-top: 114px;
+  padding-left: 16.3%;
+}
+
+.content__channel {
+  margin-bottom: 49px;
+  position: relative;
+}
+
+.content__channel:last-child {
+  margin-bottom: 20px;
+}
+
+.content__channel-recommend .content__title span {
+  margin-left: 0px;
+}
+
+.content .content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.content__name {
+  font-family: Mulish;
+  font-weight: bold;
+  font-size: 26px;
+  color: #19202C;
+  margin-left: 20px;
+}
+
+.content__title {
+  margin-bottom: 30px;
+}
+
+.content__row-recommend .video__preview {
+  width: 540px;
+  height: 250px;
+}
+
+.content__btn {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28px;
+  height: 28px;
+  background: rgba(1, 1, 1, 0.3);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.content__btn-1-prev, .content .content__btn-rec-prev, .content .content__btn-2-prev {
+  top: 10px;
+  right: 188px;
+}
+
+.content__btn-1-next, .content .content__btn-rec-next, .content .content__btn-2-next {
+  top: 10px;
+  right: 150px;
+}
+
+.swiper-slide {
+  display: inline-block;
+}
+
+.video {
+  width: 250px;
+}
+
+.video__preview {
+  width: 250px;
+  height: 150px;
+  border-radius: 14px;
+  position: relative;
+}
+
+.video__preview img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 14px;
+}
+
+.video__timecode {
+  display: inline-block;
+  position: absolute;
+  border-radius: 12px;
+  padding: 3px 9px;
+  background: rgba(1, 1, 1, 0.3);
+  color: #ffff;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.video__name {
+  font-weight: bold;
+  color: #19202C;
+  margin: 10px 0px 4px;
+}
+
+.video__subtitle {
+  font-size: 13px;
+  color: #C2C2C2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.video__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video__views {
+  padding-right: 8px;
+  position: relative;
+}
+
+.video__views:after {
+  content: ' ';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #C2C2C2;
+}
+
+.video__date {
+  padding-left: 6px;
 }
